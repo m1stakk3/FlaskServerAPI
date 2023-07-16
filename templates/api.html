@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Reference</title>
+</head>
+<body>
+    <div class="header">
+
+        <h2><a href="/">Back to main</a></h2>
+
+        <ul>
+            <li><a href="#GET">GET</a></li>
+            <li><a href="#POST">POST</a></li>
+            <li><a href="#DELETE">DELETE</a></li>
+        </ul>
+    </div>
+
+    <div class="GET" id="GET">
+        <H1>GET</H1>
+        <p>
+            ip:8999/api/logs<br>
+            Return list of all logs in JSON. Result example:<br>
+            <code>
+                {<br>
+                    "id": int: {<br>
+                        "timestamp": string,<br>
+                        "message": string}<br>
+                }<br>
+            </code>
+        </p>
+    </div>
+
+    <div class="POST" id="POST">
+        <H1>POST</H1>
+        <p>
+            ip:8999/api/logs<br>
+            Input log row in JSON. Body example:<br>
+            <code>
+                {"message": string}<br>
+            </code>
+        </p>
+    </div>
+
+    <div class="DELETE" id="DELETE">
+            <H1>DELETE</H1>
+            <p>
+                ip:8999/api/logs<br>
+                Delete logs and return empty JSON
+            </p>
+    </div>
+
+</body>
+</html>
